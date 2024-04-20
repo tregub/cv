@@ -97,32 +97,6 @@
 %debug page outer frames
 %\usepackage{showframe}
 
-
-% job listing environments
-\newenvironment{jobshort}[2]
-    {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
-    \end{tabularx}
-    }
-    {
-    }
-
-\newenvironment{joblong}[2]
-    {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
-    \end{tabularx}
-    \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
-    }
-    {
-    \end{itemize}
-    \end{minipage}    
-    }
-
-
-
 %----------------------------------------------------------------------------------------
 %	BEGIN DOCUMENT
 %----------------------------------------------------------------------------------------
@@ -146,7 +120,7 @@
 \href{https://github.com/tregub}{\raisebox{-0.05\height}\faGithub\ tregub} \ $|$ \ 
 \href{https://linkedin.com/in/aleksandrtregub}{\raisebox{-0.05\height}\faLinkedin\ aleksandrtregub} \ $|$ \ 
 \href{mailto:tregub@zoho.com}{\raisebox{-0.05\height}\faEnvelope \ tregub@zoho.com} \ $|$ \ 
-\href{https://t.me/yourusername}{\raisebox{-0.05\height}\faTelegram \ yourusername} $|$ \
+\href{https://t.me/aleksandrtregub}{\raisebox{-0.05\height}\faTelegram \ aleksandrtregub} $|$ \
 \href{tel:+541133557264}{\raisebox{-0.05\height}\faMobile \ +54.11.3355.7264} \\
 \end{tabularx}
 
@@ -156,27 +130,69 @@
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-This CV is automatically generated and deployed using the \href{https://github.com/jitinnair1/autoCV}{autoCV} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
+Lead Engineer at Nexign, JSC with 10+ years of experience, including expertise in technical support and DevOps. Dedicated to delivering high-quality DevOps solutions and actively seeking new opportunities to advance in this field.
 
 %Experience
-\section{Work Experience}
-
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
-
-
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-\end{joblong}
-  
-%Projects
-\section{Projects}
+\section{Key Experience}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+\textbf{Nexign | Lead Engineer} & \hfill Sep 2021 - present \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+       \item[—] Deployed, implemented, and managed dozens of products within staging stands using a proprietary Ansible framework, reducing the gap between staging and production environments;
+       \item[—]Implemented long-term trend monitoring of resource consumption and user staging stand usage, providing statistics that enabled the freeing up of resources and saved the company money, thereby increasing the availability of staging stands for development teams;
+       \item[—] Simplified and unified the integration of new applications and microservices into monitoring by developing a solution (using Python with psutil and ETCD) that automatically collects data on all newly installed products on the staging stand;
+       \item[—] Developed Jenkins pipelines for deploying monitoring tools across staging environments.
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Nexign | Senior Software Engineer} & \hfill Sep 2020 - Sep 2021 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[—] Developed a monitoring solution for tracking discrepancies in product versions between production and staging environments, aimed at quickly identifying mismatches;
+        \item[—] Developed a solution to aggregate key metrics stored in InfluxDB into one crucial metric of stand status, thereby simplifying status reporting for staging environments state;
+        \item[—] Reduced the number of smoke tests by refactoring and integrating them into the monitoring system, enhancing the speed of issue detection.
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Nexign | Software Engineer} & \hfill Apr 2018 - Sep 2020 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        Corrected dozens of critical smoke tests using Python/Robot Framework, expanded monitoring coverage, implementing varios of automation scripts for routine and complex operations.
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{CoreGears | System Support Engineer} & \hfill Dec 2017 - Mar 2018 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+      Resolved client issues in a SaaS VoIP environment on OpenSUSE and Sippy Softswitch platforms, with responsibilities including system configuration, diagnosis, and health monitoring with Zabbix.
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Timeweb | Technical Support Specialist (L2)} & \hfill Sep 2015 - Dec 2017 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        Retained numerous clients by addressing complex situations and achieving strong KPIs, processing over a hundred daily tickets on various technical issues.
+    \end{itemize}
+    \end{minipage}
+}
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -184,13 +200,8 @@ long long line of blah blah that will wrap when the table fills the column width
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
+2011 - 2013 & {Master’s Degree (\textit{Photonics and Optical Information Technologies})} at  \textbf{ITMO University} \\
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
-
-2022 & Class 12th Some Board \hfill  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -198,8 +209,9 @@ long long line of blah blah that will wrap when the table fills the column width
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+\begin{minipage}[t]{\linewidth}
+\normalsize{DevOps, CI/CD, Python, Bash, Git, Jenkins, TeamCity, Monitoring Systems, Linux}
+\end{minipage}
 \end{tabularx}
 
 \vfill
