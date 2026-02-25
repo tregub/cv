@@ -82,14 +82,14 @@
 \titlespacing{\section}{0pt}{10pt}{10pt}
 
 %for publications
-\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+% \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
 
 %Setup hyperref package, and colours for links
 \usepackage[unicode, draft=false]{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-\addbibresource{citations.bib}
-\setlength\bibitemsep{1em}
+% \addbibresource{citations.bib}
+% \setlength\bibitemsep{1em}
 
 %for social icons
 \usepackage{fontawesome5}
@@ -163,15 +163,15 @@ IT Engineer with over 9 years of experience, specializing in Linux, CI/CD, monit
 
 \begin{joblong}{ICVR Interactive | DevOps Engineer}{Jul 2024 - present}
 \item Support of internal infrastructure and client production environments, including Sony Pictures and Disney. Focus on automation, Infrastructure as Code, and reliable CI/CD delivery.
-\item Maintenance of GitLab CI pipelines: container builds (Docker → Nexus / GitLab Registry), application deployments, and business-driven pipeline development.
-\item Implemented complex delivery workflows, including ERPNext deployment into Sony's isolated environment via GitLab ↔ GitHub sync → AWS Systems Manager Runbooks (with AWS Secrets Manager) → Ansible.
+\item Maintenance of GitLab CI pipelines: container builds (Docker -> Nexus / GitLab Registry), application deployments, and business-driven pipeline development.
+\item Implemented complex delivery workflows, including ERPNext deployment into Sony's isolated environment via GitLab <-> GitHub sync -> AWS Systems Manager Runbooks (with AWS Secrets Manager) -> Ansible.
 \item Developed and maintained Ansible roles for Helix Perforce clustered deployments (Master / Edge / Standby).
 \item Automated infrastructure for VFX environments: Thinkbox Deadline render farms and license servers (Autodesk NLM, Foundry FLU, RLM, PFBucket) on RHEL/Debian.
 \item Managed cloud and on-prem infrastructure (AWS EC2, Proxmox) using Terraform.
 \item Introduced Grafana as Code: automated provisioning of dashboards, alerts, and data sources via Ansible.
 \item Implemented Chocolatey for Business to manage Windows machines; built CI pipelines for packaging and internalizing VFX/DCC software, including Unreal Engine, into a private Nexus.
 \item Managed HashiCorp Vault with CI/CD using Terraform roles and policies.
-\item Upgraded self-hosted GitLab across 8 major versions (16.9 → 17.6.1), migrating from legacy CI\_JOB\_JWT to OIDC id\_tokens.
+\item Upgraded self-hosted GitLab across 8 major versions (16.9 -> 17.6.1), migrating from legacy CI\_JOB\_JWT to OIDC id\_tokens.
 \item Deployed GoPhish infrastructure for security awareness campaigns.
 \item Built custom Prometheus exporters (to get metrics from Bareos, for example) and implemented Blackbox Exporter for endpoint monitoring.
 \item Provided Perforce platform support and handled incidents and requests while meeting SLA targets.
@@ -207,7 +207,7 @@ IT Engineer with over 9 years of experience, specializing in Linux, CI/CD, monit
 \item Resolved client issues within a SaaS VoIP environment on OpenSUSE and Sippy Softswitch platforms, handling system configuration, diagnostics, and resolution, as well as monitoring system health using Zabbix.
 \end{joblong}
 
-\begin{joblong}{ТаймВэб | Technical Support Specialist}{Feb 2017 - Dec 2017}
+\begin{joblong}{Timeweb | Technical Support Specialist}{Feb 2017 - Dec 2017}
 \item Retained numerous clients for the company by attentively addressing complex situations and consistently achieving strong KPIs, processing over a hundred tickets daily on diverse issues such as 4xx/5xx errors, network glitches, database management, DNS records administration, website migration and configuration, and resolving abuse cases.
 \end{joblong}
 
