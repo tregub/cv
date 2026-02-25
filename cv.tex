@@ -145,9 +145,9 @@
     \Huge{Aleksandr Tregub} \\[7.5pt]
     \href{https://github.com/tregub}{\raisebox{-0.05\height}\faGithub\ tregub} \ $|$ \ 
     \href{https://linkedin.com/in/aleksandrtregub}{\raisebox{-0.05\height}\faLinkedin\ aleksandrtregub} \ $|$ \ 
-    \href{mailto:tregub@zoho.com}{\raisebox{-0.05\height}\faEnvelope \ tregub@zoho.com} \ $|$ \ 
+    \href{mailto:alextreg@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ alextreg@gmail.com} \ $|$ \ 
     \href{https://t.me/aleksandrtregub}{\raisebox{-0.05\height}\faTelegram \ aleksandrtregub} $|$ \
-    \href{tel:+541133557264}{\raisebox{-0.05\height}\faMobile \ +54 11 3355-7264} \\
+    \href{tel:+79218810925}{\raisebox{-0.05\height}\faMobile \ +7 (921) 881-09-25} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -156,32 +156,58 @@
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-9+ years of experience in support, software engineering and DevOps. Open to various positions, including DevOps, MLOps, TestOps, SecOps, System Administration, QA, and Support, depending on work conditions. Currently living in Argentina.
+IT Engineer with over 9 years of experience, specializing in Linux, CI/CD, monitoring, automation. My background spans from large enterprise projects (MegaFon) to international media studios (Sony, Disney, Dwarf, etc.).
 
 %Experience
 \section{Key Experience}
 
-\begin{joblong}{ICVR | DevOps Engineer}{Jul 2024 - present}
-\item Maintained and developed the company's infrastructure;
-\item Troubleshot existing CI/CD processes and developed new ones;
-\item Improved monitoring and alerting coverage;
-\item Supported solutions for company customers;
-\item Provided helpdesk support for colleagues.
+\begin{joblong}{ICVR Interactive | DevOps Engineer}{Jul 2024 - present}
+\item Support of internal infrastructure and client production environments, including Sony Pictures and Disney. Focus on automation, Infrastructure as Code, and reliable CI/CD delivery.
+\item Maintenance of GitLab CI pipelines: container builds (Docker → Nexus / GitLab Registry), application deployments, and business-driven pipeline development.
+\item Implemented complex delivery workflows, including ERPNext deployment into Sony's isolated environment via GitLab ↔ GitHub sync → AWS Systems Manager Runbooks (with AWS Secrets Manager) → Ansible.
+\item Developed and maintained Ansible roles for Helix Perforce clustered deployments (Master / Edge / Standby).
+\item Automated infrastructure for VFX environments: Thinkbox Deadline render farms and license servers (Autodesk NLM, Foundry FLU, RLM, PFBucket) on RHEL/Debian.
+\item Managed cloud and on-prem infrastructure (AWS EC2, Proxmox) using Terraform.
+\item Introduced Grafana as Code: automated provisioning of dashboards, alerts, and data sources via Ansible.
+\item Implemented Chocolatey for Business to manage Windows machines; built CI pipelines for packaging and internalizing VFX/DCC software, including Unreal Engine, into a private Nexus.
+\item Managed HashiCorp Vault with CI/CD using Terraform roles and policies.
+\item Upgraded self-hosted GitLab across 8 major versions (16.9 → 17.6.1), migrating from legacy CI\_JOB\_JWT to OIDC id\_tokens.
+\item Deployed GoPhish infrastructure for security awareness campaigns.
+\item Built custom Prometheus exporters (to get metrics from Bareos, for example) and implemented Blackbox Exporter for endpoint monitoring.
+\item Provided Perforce platform support and handled incidents and requests while meeting SLA targets.
 \end{joblong}
 
-\begin{joblong}{Nexign | Software Engineer / Lead Engineer}{Apr 2018 - Jul 2024}
-\item Collaborated with Development, QA, DevOps, and IT as a member of the Acceptance Testing team within Megafon’s Quality Control Center (a leading mobile operator) to support staging environment for the Quality Gate requirements.
-\item Deployed, implemented, and managed dozens of products within staging stands using a proprietary Ansible framework, reducing the gap between staging and production.
-\item Participated in Quality Gate sessions to assess and approve products for deployment into production.
-\item Worked with the team to maintain high test suites pass rates and quickly resolve emerging issues.
-\item Developed comprehensive monitoring solutions across hundreds of applications and dozens of staging stands to maintain system integrity and operational efficiency.
+\begin{joblong}{Nexign | Senior Systems Engineer}{Sep 2021 - Jul 2024}
+\item Managed the Release Staging platform for MegaFon, a leading telecom operator. Focused on accelerating test environment provisioning, ensuring high availability, minimizing deployment risks, and driving FinOps initiatives.
+\item Orchestrated product deployment to test environments using TeamCity, Bitbucket, and a custom Ansible framework.
+\item Ensured release quality readiness through Quality Gate coordination and environment management.
+\item Optimized environment provisioning by identifying performance bottlenecks (e.g., steal time, resource contention) through proactive monitoring.
+\item Reduced operational costs (FinOps) by identifying idle resources and optimizing service resource consumption.
+\item Performed troubleshooting for applications in Kubernetes clusters (logs, pods, manifests) and resolved incidents in Kafka, RabbitMQ, and PostgreSQL.
+\item Managed Keycloak administration: configured client roles and resolved authentication challenges for microservices.
+\item Built automation scripts in Python to collect custom metrics from TeamCity, Jira, and OpenStack APIs for visualization in Grafana.
+\item Maintained and enhanced shared Ansible roles used across the company's entire product deployment lifecycle.
+\end{joblong}
+
+\begin{joblong}{Nexign | Operations Support Engineer}{Sep 2020 - Sep 2021}
+\item Focused on automating monitoring systems and product deployment workflows within the MegaFon test environment.
+\item Developed an automated metric collection system (Python, psutil, ETCD) that dynamically populated Grafana dashboards with new products, eliminating the need for manual configuration.
+\item Built a version tracking tool to detect discrepancies between Stage and Production, enabling data retrieval from the client's isolated network (MegaFon).
+\item Implemented a system to aggregate key health checks into a unified status indicator, enabling rapid assessment of test environment readiness.
+\item Deployed and configured products in Staging environments using an Ansible-based framework.
+\item Facilitated integration testing cycles and resolved complex issues related to cross-service interactions.
+\end{joblong}
+
+\begin{joblong}{Nexign | QA Infrastructure Engineer}{Apr 2018 - Sep 2020}
+\item Maintained smoke test suites, resolving dozens of critical tests with Python and Robot Framework.
+\item Provided system administration and monitoring support, ensuring reliable and efficient testing environments.
 \end{joblong}
 
 \begin{joblong}{CoreGears | System Support Engineer}{Dec 2017 - Mar 2018}
 \item Resolved client issues within a SaaS VoIP environment on OpenSUSE and Sippy Softswitch platforms, handling system configuration, diagnostics, and resolution, as well as monitoring system health using Zabbix.
 \end{joblong}
 
-\begin{joblong}{Timeweb | Technical Support Specialist}{Feb 2017 - Dec 2017}
+\begin{joblong}{ТаймВэб | Technical Support Specialist}{Feb 2017 - Dec 2017}
 \item Retained numerous clients for the company by attentively addressing complex situations and consistently achieving strong KPIs, processing over a hundred tickets daily on diverse issues such as 4xx/5xx errors, network glitches, database management, DNS records administration, website migration and configuration, and resolving abuse cases.
 \end{joblong}
 
@@ -190,8 +216,8 @@
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-2011 - 2013 & Master’s Degree (\textit{Photonics and Optical Information Technologies}) \hfill \textbf{ITMO University}  \\ 
-2007 - 2011 & Bachelor's Degree (\textit{Photonics and Optoinformatics}) \hfill \textbf{PSUTI} \\ 
+2013 & Master's Degree (\textit{Photonics and Optical Information Technologies}) \hfill \textbf{ITMO University, Saint Petersburg}  \\
+2011 & Master's Degree (\textit{Photonics and Optoinformatics}) \hfill \textbf{Volga State University of Telecommunications and Informatics, Samara} \\ 
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -199,7 +225,7 @@
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-\normalsize{DevOps, CI/CD, Python, Ansible, Bash, Linux, Git, GitLab, Jenkins, TeamCity, Monitoring Systems}\\
+\normalsize{Linux, Python, Git, Bash, Ansible, Jenkins, PostgreSQL, Kubernetes, CI/CD, Prometheus, DevOps, Nginx, Grafana, InfluxDB, VictoriaMetrics, Perforce, Terraform, Kafka, Docker, Zabbix, Amazon Web Services, Golang, Proxmox, Thinkbox Deadline, GitLab, Puppet, Nexus, TeamCity}\\
 \end{tabularx}
 
 \vfill
