@@ -108,11 +108,12 @@
     {
     }
 
-\newenvironment{joblong}[2]
+\newenvironment{joblong}[3]
     {
     \begin{tabularx}{\linewidth}{@{}l X r@{}}
     \textbf{#1} & \hfill &  #2 \\[3.75pt]
     \end{tabularx}
+    {\itshape #3}\par\vspace{2pt}
     \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
     }
@@ -161,7 +162,7 @@ IT Engineer with over 9 years of experience, specializing in Linux, CI/CD, monit
 %Experience
 \section{Key Experience}
 
-\begin{joblong}{ICVR Interactive | DevOps Engineer}{Jul 2024 - present}
+\begin{joblong}{ICVR Interactive}{Jul 2024 - present}{DevOps Engineer}
 \item Support of internal infrastructure and client production environments, including Sony Pictures and Disney. Focus on automation, Infrastructure as Code, and reliable CI/CD delivery.
 \item Maintenance of GitLab CI pipelines: container builds (Docker -> Nexus / GitLab Registry), application deployments, and business-driven pipeline development.
 \item Implemented complex delivery workflows, including ERPNext deployment into Sony's isolated environment via GitLab <-> GitHub sync -> AWS Systems Manager Runbooks (with AWS Secrets Manager) -> Ansible.
@@ -177,7 +178,7 @@ IT Engineer with over 9 years of experience, specializing in Linux, CI/CD, monit
 \item Provided Perforce platform support and handled incidents and requests while meeting SLA targets.
 \end{joblong}
 
-\begin{joblong}{Nexign | Senior Systems Engineer}{Sep 2021 - Jul 2024}
+\begin{joblong}{Nexign}{Sep 2021 - Jul 2024}{Senior Systems Engineer}
 \item Managed the Release Staging platform for MegaFon, a leading telecom operator. Focused on accelerating test environment provisioning, ensuring high availability, minimizing deployment risks, and driving FinOps initiatives.
 \item Orchestrated product deployment to test environments using TeamCity, Bitbucket, and a custom Ansible framework.
 \item Ensured release quality readiness through Quality Gate coordination and environment management.
@@ -189,7 +190,7 @@ IT Engineer with over 9 years of experience, specializing in Linux, CI/CD, monit
 \item Maintained and enhanced shared Ansible roles used across the company's entire product deployment lifecycle.
 \end{joblong}
 
-\begin{joblong}{Nexign | Operations Support Engineer}{Sep 2020 - Sep 2021}
+\begin{joblong}{Nexign}{Sep 2020 - Sep 2021}{Operations Support Engineer}
 \item Focused on automating monitoring systems and product deployment workflows within the MegaFon test environment.
 \item Developed an automated metric collection system (Python, psutil, ETCD) that dynamically populated Grafana dashboards with new products, eliminating the need for manual configuration.
 \item Built a version tracking tool to detect discrepancies between Stage and Production, enabling data retrieval from the client's isolated network (MegaFon).
@@ -198,16 +199,16 @@ IT Engineer with over 9 years of experience, specializing in Linux, CI/CD, monit
 \item Facilitated integration testing cycles and resolved complex issues related to cross-service interactions.
 \end{joblong}
 
-\begin{joblong}{Nexign | QA Infrastructure Engineer}{Apr 2018 - Sep 2020}
+\begin{joblong}{Nexign}{Apr 2018 - Sep 2020}{QA Infrastructure Engineer}
 \item Maintained smoke test suites, resolving dozens of critical tests with Python and Robot Framework.
 \item Provided system administration and monitoring support, ensuring reliable and efficient testing environments.
 \end{joblong}
 
-\begin{joblong}{CoreGears | System Support Engineer}{Dec 2017 - Mar 2018}
+\begin{joblong}{CoreGears}{Dec 2017 - Mar 2018}{System Support Engineer}
 \item Resolved client issues within a SaaS VoIP environment on OpenSUSE and Sippy Softswitch platforms, handling system configuration, diagnostics, and resolution, as well as monitoring system health using Zabbix.
 \end{joblong}
 
-\begin{joblong}{Timeweb | Technical Support Specialist}{Feb 2017 - Dec 2017}
+\begin{joblong}{Timeweb}{Feb 2017 - Dec 2017}{Technical Support Specialist}
 \item Retained numerous clients for the company by attentively addressing complex situations and consistently achieving strong KPIs, processing over a hundred tickets daily on diverse issues such as 4xx/5xx errors, network glitches, database management, DNS records administration, website migration and configuration, and resolving abuse cases.
 \end{joblong}
 
